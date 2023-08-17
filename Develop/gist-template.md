@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# A Regex Walkthrough
 
-Introductory paragraph (replace this with your text)
+This is a tutorial for beginners who are not familiar with using regular expressions (also known as regex) in the development field. The focus of this tutorial will be how to understand the regex pattern for verifying hex color values.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+
 
 ## Table of Contents
 
@@ -21,15 +21,32 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
+Regex uses the following tools listed below to manipulate strings. They will function to define the search pattern to match a text.
 
 ### Anchors
+The anchors will target positions within the text where the match should occur.
+<br></br>
+Examples of this would include:
+* `$` Indicates the end of a line.
+*  `^` Indicates the start of a line.
 
 ### Quantifiers
+Quantifiers will define the number of times a character will appear.
+<br></br>
+Examples of this would include:
+* `*` Indicates 0 or more.
+* `?` Indicates 0 or 1.
+* `+` Indicates 1 or more.
+* `{}` Indicates an exact occurance.
 
 ### OR Operator
 
 ### Character Classes
-
+Character classes will match a set of characters to a specific position.
+<br></br>
+Examples of this would include:
+* `[0-9]` Indicates any number.
+* `[a-z]` Indicates any lowercase letter.
 ### Flags
 
 ### Grouping and Capturing
