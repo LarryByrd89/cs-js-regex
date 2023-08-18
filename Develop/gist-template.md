@@ -49,8 +49,8 @@ Example of this would include:
 Character classes will match a set of characters to a specific position.
 <br></br>
 Examples of this would include:
-* `[0-9]` Indicates any number.
-* `[a-z]` Indicates any lowercase letter.
+* `[0-9]` Indicates any number from 0-9.
+* `[aeiou]` Indicates any vowel that is matched. 
 
 ### Flags
 Flags will be added toward the end of a regex pattern.
@@ -64,20 +64,53 @@ Grouping & capturing will literally group characters together or capture matched
 <br></br>
 Example of this includes:
 * `()` 
+
 ### Bracket Expressions
+Bracet expressions will provide a way to match a single character out of a range, but they are separated by a hyphen.
+<br></br>
+Examples of this includes:
+* `[a-z]` Indicates any lowercase letter from a-z will match.
+* `[0-9]` Indicates any number from 0-9.
+* `[a-z0-9]` Indicates multiple ranges of numbers and letters will match.
 
 ### Greedy and Lazy Match
+Greedy and Lazy matches involve quantifiers, which will determine the number of times a character or group of characters will repeat. Greedy and Lazy matches will manipulate these quantifiers by the amount of text they match.
+<br></br>
+Example of Greedy match is:
+* `.*` Indicates they match any character zero or more times. It is eager to include as many characters as it can.
+<br></br>
+Example of Lazy match is:
+* `.?` Indicates it will only match the first character in a string. It wants to match as few characters as possible.
 
 ### Boundaries
+Boundaries can be used when you want to prevent unintended partial matches.
+<br></br>
+Examples of this includes:
+* `\b` Indicates the position between a word, number, or symbol boundary at the start or the end.
+* `\B` Indicates the position within a word, number, or symbol boundary.
+
 
 ### Back-references
-
+Back-references will allow you to reference back to groups that have already been captured, and can match repetitive or duplicated patterns.
+<br></br>
+Examples of this includes:
+* `(\w)` Indicates a single word character that has been captured.
+* `(\b\w+\b)` Indicates a whole word that has been captured.
+* `(\d{2})`Indicates two digits captured
+* `(\d{2}):(\d{2}):(\d{2})` captures a time in the format HH:MM:SS
+* `\1` Indicates to reference the first group captured.
+* `\2` Indicates to reference the second group captured.
 ### Look-ahead and Look-behind
 Without including them in the match, look-arounds define specific conditions that are in front of or behind the current position.
 <br></br>
 Examples of these include:
 * `(?=...)` Indicates to look ahead
 * `(?<!...)` Indicates to look behind
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Laryn Myrick
+
+Email: laryn.n99@gmail.com
+
+GitHub: <a href = https://github.com/LarryByrd89>LarryByrd89</a>
